@@ -8,16 +8,14 @@
 $(document).ready(function()
 {
 	$.fn.loopslider({
-		container_id:'#jsslider',
-		target      :'<div id="images" class="clearfix"></div>',
+		container_id:'#slider',
+		target      :'<div id="images"></div>',
 		next        :'<div id="next" class="btnslide"></div>',
 		prev        :'<div id="prev" class="btnslide"></div>',
 		images      :[
-			{ img:"images/slider_01.jpg", url:"" }/*
-,
+			{ img:"images/slider_01.jpg", url:"" },
 			{ img:"images/slider_02.jpg", url:"" },
 			{ img:"images/slider_03.jpg", url:"" }
-*/
 		],
 		image_width :300,
 		auto_slide_time:5000,
@@ -69,7 +67,7 @@ $(document).ready(function()
 
 
 <!-- スライダー -->
-<div id="jsslider" class="clearfix"></div>
+<div id="slider"></div>
 <!-- end -->
 
 

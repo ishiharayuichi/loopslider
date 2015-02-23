@@ -89,7 +89,7 @@ $.fn.loopslider = function( options_ )
 		$(window).resize( function()
 		{
 			pause = true;
-			if (clearTimer !== false) clearTimeout(clearTimer);
+			if(clearTimer !== false) clearTimeout(clearTimer);
 			
 			clearTimer = setTimeout( function()
 			{
@@ -169,6 +169,7 @@ $.fn.loopslider = function( options_ )
 		
 		
 		$list.css({
+			'padding':0,
 			'width':loopList.length * size
 		});
 		

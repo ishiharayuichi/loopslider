@@ -4,18 +4,17 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.transit.js"></script>
 <script type="text/javascript" src="js/loopslider.js"></script>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <script>
 $(document).ready(function()
 {
 	$.fn.loopslider({
 		container_id:'#slider',
 		target      :'<div id="images"></div>',
-		next        :'<div id="next" class="btnslide"></div>',
-		prev        :'<div id="prev" class="btnslide"></div>',
+		next        :'<div id="next" class="btnslide fa fa-chevron-right"></div>',
+		prev        :'<div id="prev" class="btnslide fa fa-chevron-left"></div>',
 		images      :[
-			{ img:"images/slider_01.jpg", url:"" },
-			{ img:"images/slider_02.jpg", url:"" },
-			{ img:"images/slider_03.jpg", url:"" }
+			{ img:"images/slider_01.jpg", url:"" }
 		],
 		image_width :300,
 		auto_slide_time:5000,
@@ -28,25 +27,52 @@ $(document).ready(function()
 });
 </script>
 <style>
+body
+{
+	overflow: hidden;
+}
+#slider
+{
+	position: relative;
+	margin: 0 auto;
+}
 #next
 {
 	width: 20px;
 	height: 20px;
-	background-color: #f00;
 	position: absolute;
-	top: 200px;
-	right: 0;
+	top:  55px;
+	right: -50px;
 	z-index: 200;
 }
 #prev
 {
 	width: 20px;
 	height: 20px;
-	background-color: #0f0;
 	position: absolute;
-	top: 200px;
-	left: 0;
+	top:  55px;
+	left: -50px;
+	right: 0;
 	z-index: 100;
+}
+#images
+{
+	width: 300px;
+	margin: 0 auto;
+}
+#images:after
+{
+	content: "."; 
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+#circles
+{
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 #circles ul,#circles li
 {

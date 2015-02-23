@@ -14,15 +14,13 @@ $(document).ready(function()
 		next        :'<div id="next" class="btnslide fa fa-chevron-right"></div>',
 		prev        :'<div id="prev" class="btnslide fa fa-chevron-left"></div>',
 		images      :[
-			{ img:"images/slider_01.jpg", url:"" }
+			{ src:"images/slider_01.jpg", url:"http://www.google.co.jp", target:"_self" },
+			{ src:"images/slider_02.jpg", url:"http://www.google.co.jp", target:"_blank" },
+			{ src:"images/slider_03.jpg", url:"" }
 		],
 		image_width :300,
 		auto_slide_time:5000,
-		anime_slide_time:300,
-		onImageClick:function( url_ )
-		{
-			
-		}
+		anime_slide_time:300
 	});
 });
 </script>

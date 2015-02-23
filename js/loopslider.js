@@ -135,11 +135,11 @@ $.fn.loopslider = function( options_ )
 		
 			if( loopList[ i ].url )
 			{
-				$list.append( '<' + listChildElement + ' style="text-align:center; display:inline-block; width:' + size + 'px;"' + dataIndexStr + '><a href="' + loopList[ i ].url + '" style="width:' + size + 'px;"><img src="' + loopList[ i ].img + '" width=' + imageW + 'px /></a></' + listChildElement + '>' );
+				$list.append( '<' + listChildElement + ' style="text-align:center; display:inline-block; width:' + size + 'px;"' + dataIndexStr + '><a href="' + loopList[ i ].url + '" target="' + loopList[ i ].target + '" style="width:' + size + 'px;"><img src="' + loopList[ i ].src + '" width=' + imageW + 'px /></a></' + listChildElement + '>' );
 			}
 			else
 			{
-				$list.append( '<' + listChildElement + ' style="text-align:center; display:inline-block; width:' + size + 'px;"' + dataIndexStr + '><img src="' + loopList[ i ].img + '" width=' + imageW + 'px /></' + listChildElement + '>' );
+				$list.append( '<' + listChildElement + ' style="text-align:center; display:inline-block; width:' + size + 'px;"' + dataIndexStr + '><img src="' + loopList[ i ].src + '" width=' + imageW + 'px /></' + listChildElement + '>' );
 			}
 		}
 		
